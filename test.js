@@ -1,4 +1,4 @@
-test('basic test', () => {
-  expect(2 + 2).toBe(4);
+test("sample test", () => {
+  expect(1 + 1).toBe(2);
 });
 console.log("Jenkins test run");
