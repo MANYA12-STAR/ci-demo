@@ -5,8 +5,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: npm install
-  displayName: Install dependencies
-
-- script: npm test
-  displayName: Run tests
+- script: |
+    npm install
+    npm install --save-dev jest
+    npm test
+  displayName: Install and Test
